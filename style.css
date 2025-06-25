@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack the logo and nav-bar vertically */
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid red;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 90px; /* Aumenta el tamaño del logo */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: red;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.logo span {
+  font-weight: bold;
+  display: block;
+}
+.nav-bar {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 2rem; /* Increase the size of the navigation bar */
+  gap: 1.5rem;
+  border-bottom: 2px solid #bbb;
+  font-weight: bold;
+  margin-top: -2px; /* Align with the red and yellow line */
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+
+.banner {
+  display: flex;
+  background-color: yellow;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+}
+
+.oferta {
+  text-align: center;
+  font-weight: bold;
+}
+
+.oferta .plazos span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+}
+
+.facilidades h2 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.tarjetas img {
+  height: 40px;
+  margin: 0 5px;
+}
+
+.bienvenida {
+  padding: 2rem;
+  background-color: #eee;
+  text-align: center;
+  border-top: 3px solid red;
+}
+
+.bienvenida h2 {
+  color: red;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contacto {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.contacto-fixed .btn-whatsapp {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.ubicacion {
+  padding: 2rem;
+  background-color: #eee;
+  text-align: center;
+  border-top: 3px solid red;
+  margin-top: 2rem;
+}
+
+.ubicacion h2 {
+  color: red;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ubicacion-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ubicacion-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+.ubicacion-mapa {
+  flex: 2;
+  padding: 1rem;
+}
+
+.ubicacion-mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.nav-bar {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem; /* Reduce the padding to fit the text size */
+  gap: 2rem;
+  border-bottom: 2px solid #bbb;
+  font-weight: bold;
+  margin-top: -2px; /* Align with the red and yellow line */
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #bbb;
+  color: white;
+}
+.oculto {
+  display: none;
+}
