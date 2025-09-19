@@ -294,6 +294,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 280px; /* Altura fija para todas las tarjetas */
+  justify-content: space-between; /* Distribuye el espacio uniformemente */
 }
 
 .producto-card:hover {
