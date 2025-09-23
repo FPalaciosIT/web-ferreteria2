@@ -262,6 +262,15 @@ body {
   margin-bottom: 1rem;
 }
 
+.bienvenida-parrafo-principal {
+  font-size: 1.2rem; /* Un poco más grande */
+  margin-bottom: 0.5rem;
+}
+
+.bienvenida-parrafo-secundario {
+  font-size: 1rem; /* Tamaño estándar o ligeramente más pequeño */
+}
+
 .contacto {
   padding: 2rem;
   text-align: center;
@@ -283,15 +292,16 @@ body {
 .ubicacion {
   padding: 2rem;
   background-color: #eee;
-  text-align: center;
+  /* text-align: center; */ /* Eliminamos esta línea */
   border-top: 3px solid red;
   margin-top: 2rem;
 }
 
-.ubicacion h2 {
+#ubicacion h2 { /* Cambiado de .ubicacion h2 a #ubicacion h2 */
   color: red;
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center; /* Aseguramos que esté centrado */
 }
 
 .ubicacion-content {
