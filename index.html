@@ -153,7 +153,7 @@
     <p>Contamos con precios especiales para constructoras, ferreterías y empresas del sector metalmecánico. Escríbenos para más detalles.</p>
   </section>
 
-  <section class="ubicacion oculto" id="ubicacion">
+  <section class="seccion oculto" id="ubicacion">
     <h2>Ubicación</h2>
     <div class="ubicacion-content">
       <div class="ubicacion-info">
@@ -179,7 +179,7 @@
     </div>
   </section>
 
-  <section class="bienvenida" id="inicio">
+  <section class="seccion bienvenida" id="inicio">
     <h2>BIENVENIDO</h2>
     <p>Nuestros productos cubren todas las necesidades que nuestros clientes requieran desde sectores como cerrajerías, constructoras, la industria metal mecánica y ferreterías en general.</p>
   </section>
@@ -239,6 +239,27 @@
         });
       });
       
+      // Código para mostrar/ocultar secciones
+      const navLinks = document.querySelectorAll('.nav-bar a');
+      const sections = document.querySelectorAll('.seccion');
+
+      function showSection(id) {
+        sections.forEach(section => {
+          section.classList.add('oculto');
+        });
+        document.getElementById(id).classList.remove('oculto');
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          showSection(targetId);
+        });
+      });
+
+      // Mostrar la sección de inicio por defecto al cargar la página
+      showSection('inicio');
     });
   </script>
 </body>
