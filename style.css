@@ -137,12 +137,90 @@ body {
 .banner {
   display: flex;
   background-color: yellow;
-  padding: 2rem;
-  justify-content: space-around;
+  padding: 1rem;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border-top: 4px solid red;
   border-bottom: 4px solid red;
+}
+
+/* Estilos para el carrusel de promociones */
+.promociones-carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 200px; /* Reducido de 800px a 600px */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.promocion-slide img {
+  max-width: 80%; /* Reducido de 100% a 80% */
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.promocion-slide {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.promocion-slide.active {
+  display: block;
+}
+
+.promocion-slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.promocion-placeholder {
+  background-color: #f0f0f0;
+  color: #666;
+  padding: 50px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carrusel-controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.control-prev, .control-next {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.carrusel-indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicador.active {
+  background-color: red;
 }
 
 .oferta {
