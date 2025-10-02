@@ -439,3 +439,78 @@ footer {
     margin: 10px;
   }
 }
+
+/* Estilo para el título de Ventas al por mayor */
+#ventas h2 {
+  color: red;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Centrar el texto introductorio en la sección de ventas al por mayor */
+#ventas p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estilos para el formulario de ventas al por mayor */
+.formulario-ventas {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-ventas h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-mayorista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grupo label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Lato', sans-serif;
+}
+
+.form-grupo textarea {
+  resize: vertical;
+}
+
+.btn-enviar {
+  background-color: #25D366; /* Color de WhatsApp */
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.btn-enviar:hover {
+  background-color: #128C7E;
+}

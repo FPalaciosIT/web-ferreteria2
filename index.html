@@ -151,7 +151,39 @@
   </section>
   <section class="seccion oculto" id="ventas">
     <h2>Ventas al por mayor</h2>
-    <p>Contamos con precios especiales para constructoras, ferreterías y empresas del sector metalmecánico. Escríbenos para más detalles.</p>
+    <p>Contamos con precios especiales para constructoras, ferreterías y empresas del sector metalmecánico.</p>
+    
+    <div class="formulario-ventas">
+      <h3>Solicita una cotización</h3>
+      <form id="formulario-mayorista" class="form-mayorista">
+        <div class="form-grupo">
+          <label for="nombre">Nombre o Empresa:</label>
+          <input type="text" id="nombre" name="nombre">
+        </div>
+        
+        <div class="form-grupo">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        
+        <div class="form-grupo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        
+        <div class="form-grupo">
+          <label for="productos">Productos de interés:</label>
+          <textarea id="productos" name="productos" rows="4"></textarea>
+        </div>
+        
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje adicional:</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        
+        <button type="submit" class="btn-enviar">Enviar por WhatsApp</button>
+      </form>
+    </div>
   </section>
 
   <section class="seccion oculto" id="ubicacion">
@@ -263,6 +295,106 @@
 
       // Mostrar la sección de inicio por defecto al cargar la página
       showSection('inicio');
+    });
+  </script>
+  <script>
+    // Código para el menú móvil
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-bar').classList.toggle('show');
+    });
+
+    // Código para el carrusel de promociones
+    document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.promocion-slide');
+      const indicators = document.querySelectorAll('.indicador');
+      const prevBtn = document.querySelector('.control-prev');
+      const nextBtn = document.querySelector('.control-next');
+      let currentSlide = 0;
+      
+      // Función para mostrar un slide específico
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        indicators[index].classList.add('active');
+        currentSlide = index;
+      }
+      
+      // Evento para el botón anterior
+      prevBtn.addEventListener('click', function() {
+        let newIndex = currentSlide - 1;
+        if (newIndex < 0) newIndex = slides.length - 1;
+        showSlide(newIndex);
+      });
+      
+      // Evento para el botón siguiente
+      nextBtn.addEventListener('click', function() {
+        let newIndex = currentSlide + 1;
+        if (newIndex >= slides.length) newIndex = 0;
+        showSlide(newIndex);
+      });
+      
+      // Eventos para los indicadores
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function() {
+          showSlide(index);
+        });
+      });
+      
+      // Código para mostrar/ocultar secciones
+      const navLinks = document.querySelectorAll('.nav-bar a');
+      const sections = document.querySelectorAll('.seccion');
+
+      function showSection(id) {
+        sections.forEach(section => {
+          section.classList.add('oculto');
+        });
+        document.getElementById(id).classList.remove('oculto');
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          showSection(targetId);
+        });
+      });
+
+      // Mostrar la sección de inicio por defecto al cargar la página
+      showSection('inicio');
+    });
+  </script>
+  <script>
+    // Código para el formulario de WhatsApp - Solución completamente nueva
+    document.getElementById('formulario-mayorista').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Capturar los valores directamente del formulario
+      const formData = new FormData(this);
+      const nombre = formData.get('nombre') || "No especificado";
+      const telefono = formData.get('telefono') || "No especificado";
+      const email = formData.get('email') || "No especificado";
+      const productos = formData.get('productos') || "No especificado";
+      const mensaje = formData.get('mensaje') || "";
+      
+      // Construir el mensaje para WhatsApp con formato manual
+      let mensajeWhatsApp = "*Solicitud de Cotización Mayorista*%0A%0A";
+      mensajeWhatsApp += "*Nombre/Empresa:* " + nombre + "%0A";
+      mensajeWhatsApp += "*Teléfono:* " + telefono + "%0A";
+      mensajeWhatsApp += "*Email:* " + email + "%0A";
+      mensajeWhatsApp += "*Productos de interés:* " + productos + "%0A";
+      
+      if (mensaje) {
+        mensajeWhatsApp += "*Mensaje adicional:* " + mensaje + "%0A";
+      }
+      
+      // Número de WhatsApp de la ferretería
+      const numeroWhatsApp = '593984067662';
+      
+      // Crear el enlace de WhatsApp y abrir en una nueva pestaña
+      const urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + mensajeWhatsApp;
+      window.open(urlWhatsApp, '_blank');
     });
   </script>
 </body>
