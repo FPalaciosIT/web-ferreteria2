@@ -19,312 +19,315 @@
 </script>
 </head>
 <body>
+  
   <header class="header">
-    <div class="logo">
-      <img src="img/logo.png" alt="Ferretería Palacios">
-      <h1>Ferretería<br><span>Palacios</span></h1>
+    <div class="header-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Ferretería Palacios">
+            <h1>Ferretería<br><span>Palacios</span></h1>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="nav-bar">
+            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#ventas" class="nav-link">Mayoristas</a>
+            <a href="#ubicacion" class="nav-link">Ubicación</a>
+        </nav>
     </div>
-    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-    <nav class="nav-bar">
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#productos">Productos</a>
-      <a href="#ventas">Ventas al por mayor</a>
-      <a href="#ubicacion">Ubicación</a>
-    </nav>
   </header>
 
-  <section class="banner">
-    <div class="promociones-carrusel">
-      <div class="promocion-slide active">
-        <img src="img/promo.png" alt="Promoción 1">
-        6 FOCOS LED 9W
-      </div>
-      <div class="promocion-slide">
-        <!-- Espacio para promoción 2 -->
-        <div class="promocion-placeholder">Promoción 2</div>
-      </div>
-      <div class="promocion-slide">
-        <!-- Espacio para promoción 3 -->
-        <div class="promocion-placeholder">Promoción 3</div>
-      </div>
-      <div class="carrusel-controles">
-        <button class="control-prev" aria-label="Promoción anterior">&lt;</button>
-        <div class="carrusel-indicadores">
-          <span class="indicador active" data-slide="0"></span>
-          <span class="indicador" data-slide="1"></span>
-          <span class="indicador" data-slide="2"></span>
-        </div>
-        <button class="control-next" aria-label="Promoción siguiente">&gt;</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion oculto" id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Ferretería Palacios cuenta con una amplia trayectoria brindando soluciones para la construcción y mantenimiento del hogar y la industria.</p>
-  </section>
-
-  <section class="seccion oculto" id="productos">
-    <h2>Productos</h2>
-    <div class="productos-grid">
-      <div class="producto-card">
-        <img src="img/varillas.png" alt="Varillas">
-        <h3>Varillas Adelca y Novacero</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/cemento.jpg" alt="Cemento">
-        <h3>Cemento Selva Alegre</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/Tuberias.png" alt="Tuberías">
-        <h3>Tuberías y conexiones FV</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/herramientas.png" alt="Herramientas">
-        <h3>Herramientas manuales</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/dewalt.png" alt="Herramientas electricas">
-        <h3>Herramientas eléctricas</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/Lineaelectrica.png" alt="Conexiones eléctricas">
-        <h3>Conexiones eléctricas</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/perfiles.png" alt="Perfilería">
-        <h3>Tubería y perfilería de acero</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/teja.png" alt="Teja">
-        <h3>Teja española</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/triplex.png" alt="Triplex">
-        <h3>Madera Triplex</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/pinturas.png" alt="Pinturas">
-        <h3>Pinturas</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/GYPSUM.png" alt="Gypsum">
-        <h3>Gypsum</h3> 
-    </div>
-    <div class="producto-card">
-        <img src="img/duratecho.png" alt="Duratecho">
-        <h3>Duratecho y Novalosa</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/morteros.png" alt="Intaco">
-        <h3>Morteros Intacos</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/bloques.png" alt="Bloques">
-        <h3>Bloques y ladrillos</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/petreo.png" alt="Petreo">
-        <h3>Arena fina, polvo azul, ripio, piedra bola, etc</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/discos.png" alt="Discos">
-        <h3>Discos corte de metal, madera, diamantados y de copa</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/electrosoldado.png" alt="Electrosoldado">
-        <h3>Mallas y vigas electrosoldadas</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/seguridad.png" alt="Seguridad">
-        <h3>Seguridad Industrial</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/Alambres.png" alt="Alambres">
-        <h3>Alambre recocido #18, alambre galvanizado #18 y alambre galvanizado #14</h3>
-      </div>
-      <div class="producto-card">
-        <img src="img/Manguera.png" alt="Manguera">
-        <h3>Manguera negra eléctrica</h3>
-      </div>  
-  </section>
-  <section class="seccion oculto" id="ventas">
-    <h2>Ventas al por mayor</h2>
-    <p>Contamos con precios especiales para constructoras, ferreterías y empresas del sector metalmecánico.</p>
-    
-    <div class="formulario-ventas">
-      <h3>Solicita una cotización</h3>
-      <form id="formulario-mayorista" class="form-mayorista">
-        <div class="form-grupo">
-          <label for="nombre">Nombre o Empresa:</label>
-          <input type="text" id="nombre" name="nombre">
+  <main id="inicio" class="seccion-content fade-in">
+      <section class="banner">
+        <div class="banner-content">
+            <h2>BIENVENIDO</h2>
+            <p class="bienvenida-parrafo-principal">¡Todo lo que necesitas en un solo lugar!</p>
+            <p class="bienvenida-parrafo-secundario">Materiales, herramientas y accesorios para tus proyectos de construcción e industria.</p>
+            <button onclick="activarSeccion('productos')" class="btn-cta">Ver Catálogo</button>
         </div>
         
-        <div class="form-grupo">
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono">
+        <div class="promociones-carrusel">
+          <div class="promocion-slide active">
+            <img src="img/promo.png" alt="Promoción 1">
+            <p class="promo-text">6 FOCOS LED 9W</p>
+          </div>
+          <div class="promocion-slide">
+            <div class="promocion-placeholder">Promoción 2</div>
+          </div>
+          <div class="promocion-slide">
+            <div class="promocion-placeholder">Promoción 3</div>
+          </div>
+          <div class="carrusel-controles">
+            <button class="control-prev" aria-label="Promoción anterior"><</button>
+            <div class="carrusel-indicadores">
+              <span class="indicador active" data-slide="0"></span>
+              <span class="indicador" data-slide="1"></span>
+              <span class="indicador" data-slide="2"></span>
+            </div>
+            <button class="control-next" aria-label="Promoción siguiente">></button>
+          </div>
         </div>
-        
-        <div class="form-grupo">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email">
-        </div>
-        
-        <div class="form-grupo">
-          <label for="productos">Productos de interés:</label>
-          <textarea id="productos" name="productos" rows="4"></textarea>
-        </div>
-        
-        <div class="form-grupo">
-          <label for="mensaje">Mensaje adicional:</label>
-          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-        </div>
-        
-        <button type="submit" class="btn-enviar">Enviar por WhatsApp</button>
-      </form>
-    </div>
-  </section>
+      </section>
+  </main>
 
-  <section class="seccion oculto" id="ubicacion">
-    <h2>Ubicación</h2>
-    <div class="ubicacion-content">
-      <div class="ubicacion-info">
-        <h3>Principal: Guajaló</h3>
-        <p>Teléfonos: <span id="telefono"> 0984067662 / 022672418</span></p>
-        <p>Email: <span id="email">administracion@ferrepalacios.com</span></p>
-        <p>Dirección: <span id="direccion">Av. Gonzalo Perez Bustamante E2-59 y Calle E2</span></p>
-      </div>
-      <div class="ubicacion-mapa">
-        <iframe width="700" height="450" style="border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?q=Ferretería+Palacios+Importadores&key=AIzaSyBj47v927162nngP0YkS93GJbn8BlD9vRo"></iframe>
-      </div>
+  <main id="nosotros" class="seccion-content oculto fade-in">
+    <div class="container seccion-padding">
+        <h2>Sobre Nosotros</h2>
+        <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+            <p class="lead">Ferretería Palacios cuenta con una amplia trayectoria brindando soluciones para la construcción y mantenimiento del hogar y la industria.</p>
+            <p>Nos especializamos en ofrecer productos de alta calidad y asesoría técnica para que tus proyectos sean un éxito.</p>
+        </div>
     </div>
-    <div class="ubicacion-content">
-      <div class="ubicacion-info">
-        <h3>Sucursal: San Martín</h3>
-        <p>Teléfonos: <span id="telefono"> 0983477321 / 023073608</span></p>
-        <p>Email: <span id="email">administracion@ferrepalacios.com</span></p>
-        <p>Dirección: <span id="direccion">Calle S39C N12 y calle E12B</span></p>
-      </div>
-      <div class="ubicacion-mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.7957349649746!2d-78.52499590121653!3d-0.30238532938765444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a262981da309%3A0x2ab0e0055fa3157f!2sFerreteria%20Palacios!5e0!3m2!1ses!2sec!4v1750882669366!5m2!1ses!2sec" width="800" height="600" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+  </main>
+
+  <main id="productos" class="seccion-content oculto fade-in">
+    <div class="container seccion-padding">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="img/varillas.png" alt="Varillas">
+                <h3>Varillas Adelca y Novacero</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/cemento.jpg" alt="Cemento">
+                <h3>Cemento Selva Alegre</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/Tuberias.png" alt="Tuberías">
+                <h3>Tuberías y conexiones FV</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/herramientas.png" alt="Herramientas">
+                <h3>Herramientas manuales</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/dewalt.png" alt="Herramientas electricas">
+                <h3>Herramientas eléctricas</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/Lineaelectrica.png" alt="Conexiones eléctricas">
+                <h3>Conexiones eléctricas</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/perfiles.png" alt="Perfilería">
+                <h3>Tubería y perfilería de acero</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/teja.png" alt="Teja">
+                <h3>Teja española</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/triplex.png" alt="Triplex">
+                <h3>Madera Triplex</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/pinturas.png" alt="Pinturas">
+                <h3>Pinturas</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/GYPSUM.png" alt="Gypsum">
+                <h3>Gypsum</h3> 
+            </div>
+            <div class="producto-card">
+                <img src="img/duratecho.png" alt="Duratecho">
+                <h3>Duratecho y Novalosa</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/morteros.png" alt="Intaco">
+                <h3>Morteros Intacos</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/bloques.png" alt="Bloques">
+                <h3>Bloques y ladrillos</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/petreo.png" alt="Petreo">
+                <h3>Arena fina, polvo azul, ripio</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/discos.png" alt="Discos">
+                <h3>Discos de corte</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/electrosoldado.png" alt="Electrosoldado">
+                <h3>Mallas electrosoldadas</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/seguridad.png" alt="Seguridad">
+                <h3>Seguridad Industrial</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/Alambres.png" alt="Alambres">
+                <h3>Alambre recocido y galvanizado</h3>
+            </div>
+            <div class="producto-card">
+                <img src="img/Manguera.png" alt="Manguera">
+                <h3>Manguera negra eléctrica</h3>
+            </div>  
+        </div>
     </div>
-  </section>
+  </main>
 
-  <section class="seccion bienvenida" id="inicio">
-    <h2>BIENVENIDO</h2>
-    <p class="bienvenida-parrafo-principal">¡Todo lo que necesitas en un solo lugar!</p>
-<p class="bienvenida-parrafo-secundario">En Ferretería Palacios encontrarás materiales, herramientas y accesorios para tus proyectos de construcción, mantenimiento e industria.
-¡Confía en nosotros y lleva tus ideas al siguiente nivel!</p>
-  </section>
+  <main id="ventas" class="seccion-content oculto fade-in">
+    <div class="container seccion-padding">
+        <h2>Ventas al por mayor</h2>
+        <p class="text-center">Precios especiales para constructoras, ferreterías y sector metalmecánico.</p>
+        
+        <div class="formulario-ventas">
+            <h3>Solicita una cotización</h3>
+            <form id="formulario-mayorista" class="form-mayorista">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre o Empresa:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-grupo">
+                    <label for="productos">Productos de interés:</label>
+                    <textarea id="productos" name="productos" rows="4" required></textarea>
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje adicional:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar por WhatsApp</button>
+            </form>
+        </div>
+    </div>
+  </main>
 
-  <section class="contacto-fixed">
-    <a class="btn-whatsapp" href="https://wa.me/593984067662?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">
-      Escríbenos por WhatsApp
+  <main id="ubicacion" class="seccion-content oculto fade-in">
+    <div class="container seccion-padding">
+        <h2>Nuestras Ubicaciones</h2>
+        <div class="ubicacion-wrapper">
+            <div class="ubicacion-content">
+                <div class="ubicacion-info">
+                    <h3>Principal: Guajaló</h3>
+                    <p><strong>Teléfonos:</strong> 0984067662 / 022672418</p>
+                    <p><strong>Email:</strong> administracion@ferrepalacios.com</p>
+                    <p><strong>Dirección:</strong> Av. Gonzalo Perez Bustamante E2-59 y Calle E2</p>
+                </div>
+                <div class="ubicacion-mapa">
+                    <iframe width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=Ferretería+Palacios+Importadores&key=AIzaSyBj47v927162nngP0YkS93GJbn8BlD9vRo"></iframe>
+                </div>
+            </div>
+            
+            <div class="ubicacion-content">
+                <div class="ubicacion-info">
+                    <h3>Sucursal: San Martín</h3>
+                    <p><strong>Teléfonos:</strong> 0983477321 / 023073608</p>
+                    <p><strong>Email:</strong> administracion@ferrepalacios.com</p>
+                    <p><strong>Dirección:</strong> Calle S39C N12 y calle E12B</p>
+                </div>
+                <div class="ubicacion-mapa">
+                    <iframe width="100%" height="300" style="border:0;" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.7957349649746!2d-78.52499590121653!3d-0.30238532938765444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5a262981da309%3A0x2ab0e0055fa3157f!2sFerreteria%20Palacios!5e0!3m2!1ses!2sec!4v1750882669366!5m2!1ses!2sec"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <div class="contacto-fixed">
+    <a class="btn-whatsapp-float" href="https://wa.me/593984067662?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quisiera%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="25" height="25"> <span>WhatsApp</span>
     </a>
-  </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Ferretería Palacios</p>
+    <p>© 2025 Ferretería Palacios - Todos los derechos reservados.</p>
   </footer>
 
   <script>
+    // Función global para activar secciones desde botones internos
+    function activarSeccion(idSeccion) {
+        const secciones = document.querySelectorAll('.seccion-content');
+        const navLinks = document.querySelectorAll('.nav-bar a');
+
+        // Ocultar todas las secciones
+        secciones.forEach(s => s.classList.add('oculto'));
+        
+        // Quitar clase active de todos los links
+        navLinks.forEach(l => l.classList.remove('active'));
+
+        // Mostrar la seleccionada
+        const target = document.getElementById(idSeccion);
+        if(target) target.classList.remove('oculto');
+
+        // Activar el link correspondiente en el menú
+        const activeLink = document.querySelector(`.nav-bar a[href="#${idSeccion}"]`);
+        if(activeLink) activeLink.classList.add('active');
+        
+        // Cerrar menú móvil si está abierto
+        document.querySelector('.nav-bar').classList.remove('show');
+        
+        // Scroll al top (opcional, para que se vea desde el inicio la nueva sección)
+        window.scrollTo(0, 0);
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
-      // Código para el menú móvil
+      // Lógica del Menú
       document.querySelector('.menu-toggle').addEventListener('click', function() {
         document.querySelector('.nav-bar').classList.toggle('show');
       });
 
-      // Código para el carrusel de promociones
+      // Lógica de Navegación (Tabs)
+      const navLinks = document.querySelectorAll('.nav-bar a');
+      
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          activarSeccion(targetId);
+        });
+      });
+
+      // Inicializar mostrando Inicio
+      activarSeccion('inicio');
+
+      // --- CARRUSEL (Mismo código) ---
       const slides = document.querySelectorAll('.promocion-slide');
       const indicators = document.querySelectorAll('.indicador');
       const prevBtn = document.querySelector('.control-prev');
       const nextBtn = document.querySelector('.control-next');
       let currentSlide = 0;
       
-      // Función para mostrar un slide específico
       function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
         indicators.forEach(indicator => indicator.classList.remove('active'));
-        
         slides[index].classList.add('active');
         indicators[index].classList.add('active');
         currentSlide = index;
       }
       
-      // Evento para el botón anterior
-      prevBtn.addEventListener('click', function() {
+      prevBtn.addEventListener('click', () => {
         let newIndex = currentSlide - 1;
         if (newIndex < 0) newIndex = slides.length - 1;
         showSlide(newIndex);
       });
       
-      // Evento para el botón siguiente
-      nextBtn.addEventListener('click', function() {
+      nextBtn.addEventListener('click', () => {
         let newIndex = currentSlide + 1;
         if (newIndex >= slides.length) newIndex = 0;
         showSlide(newIndex);
       });
       
-      // Eventos para los indicadores
       indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', function() {
-          showSlide(index);
-        });
-      });
-      
-      // Código para mostrar/ocultar secciones
-      const navLinks = document.querySelectorAll('.nav-bar a');
-      const sections = document.querySelectorAll('.seccion');
-
-      function showSection(id) {
-        sections.forEach(section => {
-          section.classList.add('oculto');
-        });
-        document.getElementById(id).classList.remove('oculto');
-      }
-
-      navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href').substring(1);
-          showSection(targetId);
-        });
+        indicator.addEventListener('click', () => showSlide(index));
       });
 
-      // Mostrar la sección de inicio por defecto al cargar la página
-      showSection('inicio');
-
-      // Código para el formulario de WhatsApp
+      // --- WHATSAPP FORM ---
       document.getElementById('formulario-mayorista').addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        // Capturar los valores directamente del formulario
         const formData = new FormData(this);
-        const nombre = formData.get('nombre') || "No especificado";
-        const telefono = formData.get('telefono') || "No especificado";
-        const email = formData.get('email') || "No especificado";
-        const productos = formData.get('productos') || "No especificado";
-        const mensaje = formData.get('mensaje') || "";
-        
-        // Construir el mensaje para WhatsApp con formato manual
-        let mensajeWhatsApp = "*Solicitud de Cotización Mayorista*%0A%0A";
-        mensajeWhatsApp += "*Nombre/Empresa:* " + nombre + "%0A";
-        mensajeWhatsApp += "*Teléfono:* " + telefono + "%0A";
-        mensajeWhatsApp += "*Email:* " + email + "%0A";
-        mensajeWhatsApp += "*Productos de interés:* " + productos + "%0A";
-        
-        if (mensaje) {
-          mensajeWhatsApp += "*Mensaje adicional:* " + mensaje + "%0A";
-        }
-        
-        // Número de WhatsApp de la ferretería
-        const numeroWhatsApp = '593984067662';
-        
-        // Crear el enlace de WhatsApp y abrir en una nueva pestaña
-        const urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=" + mensajeWhatsApp;
-        window.open(urlWhatsApp, '_blank');
+        let msg = `*Solicitud Mayorista*%0A%0A*Nombre:* ${formData.get('nombre')}%0A*Teléfono:* ${formData.get('telefono')}%0A*Email:* ${formData.get('email')}%0A*Productos:* ${formData.get('productos')}`;
+        if (formData.get('mensaje')) msg += `%0A*Nota:* ${formData.get('mensaje')}`;
+        window.open(`https://wa.me/593984067662?text=${msg}`, '_blank');
       });
     });
   </script>
